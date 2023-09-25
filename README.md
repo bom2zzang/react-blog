@@ -1,3 +1,24 @@
+# History
+
+## node version
+
+- 18
+
+## react install
+
+```
+npx create-react-app blog
+```
+
+## JSX
+
+- js 파일에서 사용하는 html 대용품
+- 문법
+  - html에 class 넣을 땐 className
+  - 변수 데이터 바인딩 {중괄호}
+  - style={{스타일명:값}}
+    - font-size -> fontSize (자바스크립트는 -를 minus로 인식)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
