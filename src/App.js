@@ -1,16 +1,22 @@
 // import logo from "./logo.svg";
 import "./App.css";
+import { useState, useTransition } from "react";
 
 function App() {
-  let title = "블로그 제목";
+  const [title, setTitle] = useState(["추천추천", "강추", "강강추추"]);
   return (
     <div className="App">
       <div className="black-nav">
-        <h4>블로그</h4>
+        <h4>Blog</h4>
       </div>
-      <h4 id={title} style={{ color: "purple", fontSize: "30px" }}>
-        {title}
-      </h4>
+      {title.map((titleEl, i) => {
+        return (
+          <div key={i} className="list">
+            <h4>{titleEl}</h4>
+            <p>2월 17일 발행</p>
+          </div>
+        );
+      })}
     </div>
   );
 }

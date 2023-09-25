@@ -19,6 +19,29 @@ npx create-react-app blog
   - style={{스타일명:값}}
     - font-size -> fontSize (자바스크립트는 -를 minus로 인식)
 
+## state
+
+- 만드는 법
+  - import { ustState }
+  - useState(보관할 자료)
+  - let [작명a, 작명b] (destructuring 문법)
+    - 작명a : state에 보관했던 자료
+    - 작명b : state 변경을 도와주는 함수
+- 왜 사용하는가
+  - 변동사항이 생기면 state를 사용하는 html도 자동으로 재렌더링 해줌
+
+## [참고] destructuring 문법
+
+- array 안에 있는 데이터들을 변수로 쉽게 저장하고 싶을 때 사용하는 문법
+  - ex)
+  ```
+  let array = ['kim', 20];
+  let name = array[0];
+  let age = array[1];
+  // -> destructuring 문법 사용
+  let [name, age] = ['kim', 20];
+  ```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
